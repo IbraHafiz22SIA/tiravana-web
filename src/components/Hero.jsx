@@ -2,7 +2,7 @@ import "./Hero.css";
 import { Link } from "react-router-dom";
 // 1. Import gambar dari folder assets
 // Perhatikan: Sesuaikan jumlah titik (../) dengan posisi folder Anda
-import selectionImg from "../assets/selection.png"; 
+import selectionImg from "../assets/Selection.png"; 
 
 function Hero() {
   return (
