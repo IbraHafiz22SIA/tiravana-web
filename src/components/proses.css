@@ -1,0 +1,75 @@
+.proses-section {
+  width: 100%;
+  padding: 80px 10%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.proses-container {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #f9f9f9; /* Background abu-abu muda sesuai referensi */
+  border-radius: 24px;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.proses-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 50px;
+}
+
+.proses-grid {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.proses-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Shadow sangat halus sesuai gambar */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f0f0f0;
+}
+
+.proses-icon-wrapper {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proses-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+.proses-card-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 992px) {
+  .proses-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .proses-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}

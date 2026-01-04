@@ -1,0 +1,66 @@
+.testimonial {
+  padding: 90px 8%;
+  background: #ffffff;
+  text-align: center;
+}
+
+.testimonial-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #111;
+}
+
+.testimonial-description {
+  max-width: 720px;
+  margin: 0 auto 60px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666;
+}
+
+/* Cards grid */
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Single card */
+.testimonial-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 24px 20px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+/* Text */
+.testimonial-text {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 22px;
+}
+
+/* Footer */
+.testimonial-footer strong {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #111;
+}
+
+.testimonial-footer span {
+  display: block;
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+/* Stars */
+.stars {
+  color: #fbbf24; /* kuning bintang */
+  font-size: 13px;
+  letter-spacing: 2px;
+}

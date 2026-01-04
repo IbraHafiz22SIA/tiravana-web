@@ -1,0 +1,96 @@
+.catalog-section {
+  width: 100%;
+  padding: 120px 10% 80px; /* Padding atas besar untuk menghindari tertutup Navbar */
+  background-color: #ffffff;
+}
+
+.catalog-header {
+  text-align: left;
+  margin-bottom: 50px;
+  max-width: 800px;
+}
+
+.catalog-main-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+.catalog-subtitle {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom sesuai desain */
+  gap: 24px;
+}
+
+.catalog-card {
+  background: #fdfdfd;
+  border-radius: 20px;
+  border: 1px solid #f0f0f0;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.catalog-img-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Foto produk berbentuk kotak */
+  overflow: hidden;
+  background-color: #f5f5f5;
+  padding: 15px; /* Memberi ruang napas untuk gambar produk */
+}
+
+.catalog-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.catalog-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.catalog-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  min-height: 44px; /* Menjaga agar card sejajar meski nama panjang */
+}
+
+.catalog-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #16a34a; /* Warna hijau khas Tiravana */
+}
+
+/* Responsif untuk tablet dan HP */
+@media (max-width: 992px) {
+  .catalog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+  .catalog-main-title {
+    font-size: 28px;
+  }
+}

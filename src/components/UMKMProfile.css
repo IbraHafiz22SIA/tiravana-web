@@ -1,0 +1,43 @@
+/* Menghilangkan margin bawaan browser agar tidak ada sela putih/hitam */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.umkm-profile {
+  width: 100%;            /* Pakai 100% bukan 99vw */
+  min-height: 100vh;
+  padding-top: 72px;      /* Jarak untuk Navbar */
+  background-color: #fff; /* Pastikan background putih merata */
+  display: flex;
+  justify-content: center; /* Menengahkan container secara horizontal */
+}
+
+.umkm-wrapper {
+  width: 100%;
+  max-width: 1400px;      /* Batas maksimal area konten agar tidak terlalu lebar di monitor ultra-wide */
+  display: flex;
+  justify-content: flex-start; /* Konten mulai dari kiri */
+  padding: 80px 10%;      /* Memberi jarak kiri-kanan secara otomatis (persentase) */
+}
+
+.umkm-container {
+  width: 100%;
+  max-width: 900px;
+}
+
+.umkm-title {
+  font-size: 52px;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.umkm-container p {
+  font-size: 19px;
+  line-height: 1.9;
+  color: #444;
+  margin-bottom: 24px;
+}

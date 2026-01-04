@@ -1,0 +1,128 @@
+/* --- CONTAINER UTAMA HERO --- */
+.hero {
+  height: 100vh;
+  width: 100%;
+  padding-top: 72px; /* Menghindari konten tertutup navbar fixed */
+  
+  /* Background image diatur via inline style di JSX, 
+     tapi properti di bawah ini memastikan tampilannya rapi */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+/* --- LAYER OVERLAY GELAP --- */
+/* Membuat teks putih lebih mudah dibaca di atas gambar yang terang */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Hitam transparan 50% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* --- KONTEN TEKS --- */
+.hero-content {
+  max-width: 850px;
+  padding: 0 20px;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  color: #4ade80; /* Hijau muda cerah */
+  opacity: 0.9;
+}
+
+.hero-title {
+  font-size: 3.5rem; /* Ukuran besar untuk desktop */
+  font-weight: 800;
+  margin-bottom: 24px;
+  line-height: 1.1;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0 auto 40px;
+  max-width: 650px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* --- TOMBOL (BUTTONS) --- */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Tombol Hijau */
+.btn-primary {
+  background-color: #16a34a;
+  color: white;
+  box-shadow: 0 4px 15px rgba(22, 163, 74, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: #15803d;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
+}
+
+/* Tombol Putih */
+.btn-secondary {
+  background-color: white;
+  color: #16a34a;
+}
+
+.btn-secondary:hover {
+  background-color: #f0fdf4;
+  transform: translateY(-3px);
+}
+
+/* --- RESPONSIVE (UNTUK LAYAR HP) --- */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem; /* Mengecilkan judul di HP */
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column; /* Tombol jadi tumpuk atas-bawah di HP */
+    gap: 12px;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%; /* Tombol melebar penuh di HP */
+    padding: 14px 20px;
+  }
+}

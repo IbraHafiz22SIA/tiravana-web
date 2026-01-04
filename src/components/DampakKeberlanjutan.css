@@ -1,0 +1,56 @@
+.impact {
+  padding: 90px 8%;
+  background: #fafafa;
+  text-align: center;
+}
+
+.impact-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #111;
+}
+
+.impact-description {
+  max-width: 720px;
+  margin: 0 auto 60px;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #666;
+}
+
+/* Cards wrapper */
+.impact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Single card */
+.impact-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 32px 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Icon */
+.impact-icon {
+  display: inline-block;
+  font-size: 50px;
+  margin-bottom: 12px;
+}
+
+/* Number */
+.impact-card h3 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+/* Label */
+.impact-card p {
+  font-size: 16px;
+  color: #666;
+}

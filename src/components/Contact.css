@@ -1,0 +1,98 @@
+.contact-section {
+  width: 100%;
+  padding: 120px 10% 80px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-header {
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 60px;
+}
+
+.contact-main-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.contact-subtitle {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 900px;
+  background-color: #f9f9f9; /* Background sesuai design */
+  border-radius: 30px;
+  padding: 50px 60px;
+  border: 1px solid #f0f0f0;
+}
+
+.contact-card-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contact-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+}
+
+.contact-icon {
+  font-size: 24px;
+  color: #16a34a; /* Warna hijau Tiravana */
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+.contact-value {
+  font-size: 15px;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 30px 25px;
+  }
+  .contact-main-title {
+    font-size: 28px;
+  }
+}

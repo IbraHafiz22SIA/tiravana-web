@@ -1,0 +1,78 @@
+.footer {
+  background: #fafafa;
+  padding: 80px 8% 30px;
+  font-size: 13px;
+  color: #555;
+}
+
+/* Top section */
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* Brand */
+.footer-logo {
+  color: #22c55e;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.footer-brand p {
+  line-height: 1.7;
+  max-width: 260px;
+}
+
+/* Columns */
+.footer-column h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #111;
+}
+
+.footer-subtitle {
+  margin-top: 18px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-column li:hover {
+  color: #22c55e;
+}
+
+/* Bottom section */
+.footer-bottom {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Social icons */
+.footer-social span {
+  margin-left: 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-social span:hover {
+  color: #22c55e;
+}

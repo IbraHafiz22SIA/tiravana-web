@@ -1,0 +1,58 @@
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0; /* Sedikit dikurangi agar proporsional */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Container untuk Logo + Teks */
+.logo-wrapper {
+  display: flex;
+  align-items: center; /* Menyejajarkan logo & teks tepat di tengah */
+  text-decoration: none;
+  gap: 10px; /* Jarak antara gambar logo dan tulisan */
+}
+
+/* Mengatur ukuran gambar logo agar sama dengan teks */
+.navbar-logo-img {
+  height: 26px; /* Sedikit lebih besar dari font-size (22px) agar secara visual terlihat pas */
+  width: auto;
+  display: block;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #16a34a; /* hijau */
+  margin: 0; /* Menghilangkan margin default h2 */
+  line-height: 1; /* Memastikan tidak ada ruang kosong tambahan */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #16a34a;
+}
